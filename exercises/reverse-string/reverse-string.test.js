@@ -1,4 +1,4 @@
-import { reverseString1, reverseString2, reverseString3 } from "./index.js";
+import { reverseString1, reverseString2, reverseString3 } from "./reverse-string";
 
 describe("Function reverseString", () => {
   it("should return a reversed string", () => {

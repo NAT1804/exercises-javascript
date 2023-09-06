@@ -1,4 +1,4 @@
-import { palindrome } from "./index.js";
+import { palindrome } from "./palindrome";
 
 describe('Function palindrome', () => { 
   it('should be return true if reversed string equal ', () => {
