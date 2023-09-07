@@ -1,9 +1,9 @@
 export function chunk(array, size) {
-  const N = array.length,
-    ans = [];
-  for (let i = 0; i < N; i += size) {
-    const arr = array.slice(i, i + size);
-    ans.push(arr);
+  const chunkedArr = [];
+  let index = 0;
+  while (index < array.length) {
+    chunkedArr.push(array.slice(index, index + size))
+    index += size;
   }
-  return ans;
+  return chunkedArr;
 }
