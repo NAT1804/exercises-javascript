@@ -12,7 +12,15 @@ export function printStep(n) {
   }
 }
 
-export function printStep2(n) {
-  if (n == 0) return;
+export function printStep2(n, row = 0, stair = '', ans = '') {
+  if (n == row) return ans;
   
+  if (stair.length === n) {
+    ans += (stair + '/n')
+    return printStep2(n, row + 1, '', ans)
+  }
+  
+  stair += stair.length <= row ? '#' : ' '
+  return printStep2(n, row, stair, ans)
+
 }
